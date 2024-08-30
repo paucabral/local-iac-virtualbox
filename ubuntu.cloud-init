@@ -1,0 +1,11 @@
+#cloud-config
+packages:
+  - build-essential
+  - dkms
+  - linux-headers-$(uname -r)
+  - virtualbox-guest-dkms
+  - virtualbox-guest-utils
+  - virtualbox-guest-x11
+runcmd:
+  - sudo systemctl enable vboxadd.service
+  - sudo systemctl start vboxadd.service
