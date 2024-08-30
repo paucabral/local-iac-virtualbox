@@ -16,10 +16,10 @@ module "demo-multi" {
 
   vm_name                = "demo-multi"
   vm_count               = 2
-  image                  = var.ubuntu_image
+  image                  = var.centos_image
   cpus                   = 2
   memory                 = "512 MB"
-  user_data              = "centos.cloud-init"
+  user_data              = "./centos.cloud-init"
   network_adapter_type   = var.common_network_adapter_type
   network_host_interface = var.common_network_host_interface
 }
