@@ -6,7 +6,7 @@ module "demo-single" {
   image                  = var.ubuntu_image
   cpus                   = 1
   memory                 = "512 MiB"
-  user_data              = "./ubuntu.cloud-init"
+  user_data              = "./user_data/ubuntu.cloud-init"
   network_adapter_type   = var.common_network_adapter_type
   network_host_interface = var.common_network_host_interface
 }
@@ -19,7 +19,7 @@ module "demo-multi" {
   image                  = var.centos_image
   cpus                   = 2
   memory                 = "512 MB"
-  user_data              = "./centos.cloud-init"
+  user_data              = "./user_data/centos.cloud-init"
   network_adapter_type   = var.common_network_adapter_type
   network_host_interface = var.common_network_host_interface
 }
