@@ -13,7 +13,7 @@ terraform apply -auto-approve
 echo "-----------------------------------"
 
 echo -e '\033[1mGenerate Ansible Inventory...\033[0m'
-bash tf_output_to_ansible_inventory.bash
+bash tf_output_to_ansible_inventory.sh
 echo "-----------------------------------"
 
 echo -e '\033[1mRun Ansible Playbook...\033[0m'
