@@ -39,3 +39,18 @@ terraform.rc
 
 # Vagrant Boxes
 *.box
+
+# Ansible Inventory
+inventory
+*.inventory
+inventory.*
+*.inventory.*
+
+# Security Keys
+*.pem
+*.key
+*.pub
+
+# Environment Variables
+.env
+*.env

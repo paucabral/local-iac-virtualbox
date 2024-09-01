@@ -3,7 +3,7 @@ module "demo-single" {
 
   vm_name                = "demo-single"
   vm_count               = 1
-  image                  = var.ubuntu_image
+  image                  = var.centos_image
   cpus                   = 1
   memory                 = "512 MiB"
   user_data              = "./user_data/ubuntu.cloud-init"
