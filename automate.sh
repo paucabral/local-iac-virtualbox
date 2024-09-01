@@ -1,5 +1,9 @@
 #!/bin/bash
 
+echo -e '\033[1mLoad Environment Variables...\033[0m'
+source .env
+echo "-----------------------------------"
+
 echo -e '\033[1mTerraform Init...\033[0m'
 terraform init
 echo "-----------------------------------"
